@@ -354,3 +354,4 @@ MonoBehaviour:
   p_Disk: {fileID: 971846767511770353, guid: 06a3574d6949e62459a03ba238b5c7dd, type: 3}
   CrossHair: {fileID: 6763077696790067497, guid: dbbd2618ec1d69242b1d67efa2fc611e,
     type: 3}
+  newSprite: {fileID: 2800000, guid: 204a1970a4e6bd14fbc354efe550ca15, type: 3}

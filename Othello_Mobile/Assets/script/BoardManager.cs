@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BoardManager : MonoBehaviour
 {
@@ -18,17 +19,30 @@ public class BoardManager : MonoBehaviour
     PlayerTurn turn;
     List<GameObject> lst_cross;
     // Start is called before the first frame update
+    public Texture2D newSprite;
+
     void Start()
     {
+        Color[] g_scale = newSprite.GetPixels();
+        float[] n = new float[g_scale.Length];
+        for(int i=0; i<n.Length; ++i)
+        {
+            n[i] = g_scale[i].grayscale;
+        }
+
         lst_cross = new List<GameObject>();
         turn = PlayerTurn.Black;
         Board = new GameObject[8, 8];
+
+        int g_cnt = 0;
         for (int i = 0; i < 8; ++i)
         {
             for (int j = 0; j < 8; ++j)
             {
                 Board[i, j] = Instantiate(p_Board_Piece, transform);
-                Board[i, j].transform.localPosition = new Vector3(-3.5f + i, 3.5f - j, 0);
+                Board[i, j].transform.localPosition = new Vector3(-3.5f + i, 3.5f - j, g_scale[g_cnt++].grayscale);
+
+
             }
         }
 
