@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\LeeYongsun\\Documents\\Job\\Graduate School\\Game\\TileGameProject\\Client\\Othello_Mobile\\Assembly-CSharp.csproj",
+  "TargetFramework": "v4.7.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
